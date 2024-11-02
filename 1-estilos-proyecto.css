@@ -1,0 +1,219 @@
+*{
+ /* background: #a0adad;   */
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+a{
+    color:#fff;
+    text-shadow: 4px 4px 4px black, 4px 4px 4px black,4px 4px 4px black,4px 4px 4px black ;
+    text-decoration: none;
+}
+
+.padre {
+    
+    /* font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+     display: flex;
+     flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{
+        background:url(../imagenes/dra4.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap ;
+    }
+        .menu{
+             background: rgba(0,0,0,.2); 
+            display: flex;
+            flex-flow: row nowrap;
+            height: 50px;
+            align-items: center;
+            border-bottom: solid rgba(255,255,255,5);
+
+        }
+            .logo{
+                flex:1 1 auto;    
+                }
+                .logo a{
+                    color:#fff;
+                   font-size: 30px;
+                }
+                .logo a:hover{
+                     color:rgb(7, 7, 7);
+                        text-shadow: 3px 3px 3px white, 3px 3px 3px white,3px 3px 3px white,3px 3px 3px white ;
+                    
+                    
+                }
+            .nav{
+                /* background: #E2BFD9; */
+                flex:5 1 auto;
+               
+            }
+                .nav a{
+                    color :#fff;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    padding: 0px 10px;
+                    letter-spacing: 2px;
+                  }
+                  .nav a:hover{
+                        color:rgb(7, 7, 7);
+                        text-shadow: 3px 3px 3px white, 3px 3px 3px white,3px 3px 3px white,3px 3px 3px white ;
+                        
+                  }
+                  
+            .social{
+                /* background: #E2BFD9; */
+                flex:1 1 auto;
+                display: flex;
+            }
+            .social a{
+                font-size: 18px;
+                color:#fff;
+                padding: 0% 5px;
+            }
+            .social a:hover{
+                color:#343434
+            }
+        .texto{
+            /* background: #ea5455; */
+             height: 750px; 
+            display: flex;
+            align-items: center;
+            h1{
+                text-shadow: 3px 3px 3px white, 3px 3px 3px white,3px 3px 3px white,3px 3px 3px white ;
+                font-size: 32px;
+                color: #060606;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+        }
+             /* h1{
+                background: #ffd460;
+                text-align: center;
+            }  */
+    .section{
+        background: #E85C0D;
+        display: flex;
+    }
+        .articulos{
+           background: #FABC3F;
+           flex: 2 1 auto;
+           display: flex;
+           flex-flow: row wrap;
+    }
+            .article{
+                 background: rgba(0, 0, 0,.1);  
+                flex: 1 1 40%;
+                /* color: #444; */
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                flex:1 1 45%;
+                /* background: #ececec; */
+               
+            }
+            .article img{
+                width: 80%;
+            }
+            
+            h3{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -150;
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color:#fff
+            }
+            
+    .aside{
+        background: #D9ABAB;
+         flex: 1 1 auto; 
+        
+        margin: 10px 10px 10px 10px;
+        
+    }
+    /* .aside img{
+         width: 100%; 
+    } */
+        .publicidad{
+          background: #FF8C9E;
+          background: rgba(0, 0, 0,.1); 
+          margin: 10px 10px 10px 10px; 
+
+    }
+    .navegacion{
+         
+        background: #000000 ;
+        flex:   1 1 100%;
+        
+        
+        
+
+}
+    .foter{
+        background: #000;
+        display: flex;
+        justify-content: center;
+    }
+    .pie{
+       background: #F5004F; 
+       width: 300px;
+    }
+ @media all and (max-width: 1120px){
+        .section{
+            flex-direction: column;
+        }
+        .menu{
+             flex-direction: column;
+             height: auto;
+        }
+        .aside{
+            flex-direction: column;
+            display: flex;
+            justify-content: center ;
+        }
+        .social{
+            display: flex;
+        }
+        h1{
+            font-size: 5px;
+        }
+        .texto{
+            height: 450px;
+        }
+    }
+@media all and (max-width: 720px){
+        .articulos{flex-direction: column;}
+        h1{font-size: 9px;}
+                
+            
+
+        }
+ @media all and (max-width: 650px){
+            .off{display: none;}
+            .nav a{ font-size: 30px;} 
+            
+    }
+@media all and (max-width: 480px){
+        .aside {
+            flex-direction: column;
+           
+        }
+
+}
